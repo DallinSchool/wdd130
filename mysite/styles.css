@@ -1,0 +1,452 @@
+/* Universal Elements ----------------------------------------------------------------------*/ 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #121416;
+    border-bottom: 4px solid #da731f;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 30px 30px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color:#da731f;
+    transform: translateY(3px);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    margin-top: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    background: #da731f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    position: relative;
+    user-select: none;
+    text-align: center;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #e80;
+    transition-duration: 0.1s;
+}
+
+/* Found this cool button code and wanted to try it ----------------------------------------------------------------------*/ 
+
+.button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.button:active:after {
+    box-shadow: 0 0 0 0 white;
+    opacity: 1;
+    transition: 0s;
+}
+
+/* This is specific to the Home Page ----------------------------------------------------------------------*/ 
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #2B2D2F;
+    background-image: url('images/background_slate.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.intro h2 {
+    font-size: 3.5em;
+    margin: 0 0 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.intro h3 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+    font-weight: normal;
+    text-align: center;
+    color: #e0e0e0; 
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+    padding-bottom: 10px; 
+}
+
+.intro p {
+    max-width: fit-content;
+    font-size: 1.2em;
+    padding: 80px;
+    background-color: #333;
+    border-radius: 60%;
+    max-width: 80%;
+    margin: 30px auto 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
+
+#profile {
+    width: 420px;
+    height: 550px;
+    margin-top: 20px;
+}
+
+
+.interest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#interest_heading {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.interest-item {
+    margin: 10px;
+}
+
+.interest-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 70%;
+}
+
+.interest-item img:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+    
+}
+
+/* This is specific to the Contact Page ----------------------------------------------------------------------*/ 
+
+.contact-main {
+    background-image: url('images/background_slate.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.contact {
+    text-align: center;
+    background-color: #444;
+    max-width: 80%;
+    margin: 30px auto 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color:#fff
+}
+
+
+.contact-info p {
+    font-size: 1.1em;
+}
+
+.contact-form {
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h2, h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form .button {
+    display: block;
+    width: 50%;
+    background-color: #f90;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.contact-form .button:hover {
+    background-color: #e80;
+}
+
+/* This is specific to the Graphic Design Page ----------------------------------------------------------------------*/ 
+
+.graphic_intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #2B2D2F;
+    background-image: url('images/background_slate.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.graphic_intro h2 {
+    font-size: 3.5em;
+    margin: 0 0 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.graphic_intro p {
+    font-size: 1.2em;
+    margin: 0 auto 30px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.graphic-design {
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.graphic-design h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.graphic-design h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.portfolio-item1, .portfolio-item2, .portfolio-item3, .portfolio-item4 {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #2B2D2F;
+    border-radius: 10px;
+}
+
+
+.portfolio-item1 img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-item2 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-item3 img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-item4 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+
+/* This is specific to the Developer Page ----------------------------------------------------------------------*/ 
+
+.dev_intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #2B2D2F;
+    background-image: url('images/background_slate.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.dev_intro h2 {
+    font-size: 3.5em;
+    margin: 0 0 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.dev_intro p {
+    font-size: 1.2em;
+    margin: 0 auto 30px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.skills-item {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.skills-item:hover img {
+    opacity: 10%;
+    cursor: pointer;
+}
+
+.skills-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 1;
+    transition: transform 0.3s;
+}
+
+
+.skills-item p {
+    max-width: 300px;
+    margin: 10px auto 0;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.skills-item .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f90;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.skills-item:hover .hover-text {
+    opacity: 1;
+}
+
+#spacer {
+        height: 600px;
+        width: 100%;
+}

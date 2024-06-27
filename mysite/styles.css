@@ -69,6 +69,17 @@ footer {
     margin-top: auto;
 }
 
+footer a{
+    color:#fff;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+
 .button {
     display: inline-block;
     padding: 20px 40px;
@@ -90,7 +101,7 @@ footer {
     transition-duration: 0.1s;
 }
 
-/* Found this cool button code and wanted to try it ----------------------------------------------------------------------*/ 
+/* Found this cool button code and wanted to try it. You can see it when you click the contact form "submit" button.----------------------------------------------------------------------*/ 
 
 .button:after {
     content: "";

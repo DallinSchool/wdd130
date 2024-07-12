@@ -177,7 +177,6 @@ footer a:visited{
 
 /* Flip Card Code here --------------------------------------------------------------------*/
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .card_container {
     display: flex;
     justify-content: center;
@@ -190,10 +189,8 @@ footer a:visited{
     width: 420px;
     height: 550px;
     border: none;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
     
-
-
     
   }
   
